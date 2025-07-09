@@ -24,6 +24,9 @@
 - 📍 Based in **Mainz, Deutschland** 🇩🇪
 - 💼 Open to **Senior Mobile Engineer** opportunities
 
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 ## 🛠️ Tech Stack
 
 <div align="center">
