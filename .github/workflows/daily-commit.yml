@@ -1,0 +1,45 @@
+name: Daily Contribution
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Daily at 12:00 UTC (adjust for your timezone)
+  workflow_dispatch:      # Allow manual trigger
+
+jobs:
+  daily-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+      - name: Create daily progress
+        run: |
+          # Create or update progress file
+          echo "$(date '+%Y-%m-%d %H:%M:%S'): Daily progress update 🚀" >> daily-progress.md
+          echo "" >> daily-progress.md
+          
+          # Add some variety to commits
+          MESSAGES=(
+            "📈 Daily progress update"
+            "🔥 Keeping the streak alive"
+            "✨ Another day of coding"
+            "🚀 Continuous improvement"
+            "💪 Never stop learning"
+            "🎯 Daily commitment"
+            "📚 Learning something new"
+          )
+          
+          # Pick random commit message
+          MESSAGE=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+          
+          # Commit and push
+          git add daily-progress.md
+          git commit -m "$MESSAGE - $(date '+%Y-%m-%d')" || echo "No changes to commit"
+          git push || echo "Nothing to push"
