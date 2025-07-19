@@ -119,6 +119,11 @@
 ## 📱 Recent Activity
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#4](https://github.com/RamiDebs/RamiDebs/pull/4) in [RamiDebs/RamiDebs](https://github.com/RamiDebs/RamiDebs)
+2. 💪 Opened PR [#4](https://github.com/RamiDebs/RamiDebs/pull/4) in [RamiDebs/RamiDebs](https://github.com/RamiDebs/RamiDebs)
+3. 🎉 Merged PR [#3](https://github.com/RamiDebs/RamiDebs/pull/3) in [RamiDebs/RamiDebs](https://github.com/RamiDebs/RamiDebs)
+4. 💪 Opened PR [#3](https://github.com/RamiDebs/RamiDebs/pull/3) in [RamiDebs/RamiDebs](https://github.com/RamiDebs/RamiDebs)
+5. 🔒 Closed issue [#1](https://github.com/RamiDebs/RamiDebs/issues/1) in [RamiDebs/RamiDebs](https://github.com/RamiDebs/RamiDebs)
 <!--END_SECTION:activity-->
 
 ## 🤝 Let's Connect!
